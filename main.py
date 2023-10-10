@@ -14,19 +14,18 @@ class CPSBC():
         self.all_data = []
         self.lastpage = 0
         self.cookies = {
-            'SSESS46e5ac66c3cb256f0a441094408a6223': 'ho-MABFourK%2CxdcnTb6144C99uIUIIRqW9BdcL28Pp5v0Xhl',
-            'HASH_SSESS46e5ac66c3cb256f0a441094408a6223': 'DC715C40811E55C2BC5D1E495F30B4802E01A979',
-            '_pk_id.1.3ae9': 'c9f4283299c3a76d.1695026148.',
+            '_pk_id.1.3ae9': 'a9494f833e61216b.1695710517.',
+            '_hjSessionUser_283045': 'eyJpZCI6ImM0NjQ0N2JmLTQwZTMtNTFmOC1iODY5LTQxMjhjYWM0MzJkMSIsImNyZWF0ZWQiOjE2OTU3MTA1MTgzNTYsImV4aXN0aW5nIjp0cnVlfQ==',
             '_pk_ses.1.3ae9': '1',
-            '_gid': 'GA1.2.2040544286.1695026148',
-            '_hjFirstSeen': '1',
-            '_hjSession_283045': 'eyJpZCI6IjI5ZjcwMDIzLTQ3YWItNDU4ZS05YjVmLTgxMGYzN2UxMTQyOCIsImNyZWF0ZWQiOjE2OTUwMjYxNDgxOTksImluU2FtcGxlIjp0cnVlfQ==',
-            '_hjAbsoluteSessionInProgress': '0',
-            '_hjSessionUser_283045': 'eyJpZCI6ImRlMzI4MTg4LTFjNTctNTNhNC1hMTAzLWZlNTNiNmQxZmNlNiIsImNyZWF0ZWQiOjE2OTUwMjYxNDgxOTcsImV4aXN0aW5nIjp0cnVlfQ==',
-            '_hjIncludedInSessionSample_283045': '1',
+            '_gid': 'GA1.2.25044513.1696927281',
             '_gat_UA-30790406-1': '1',
-            '_ga_GD17PFQCL8': 'GS1.1.1695025200.1.1.1695028285.0.0.0',
-            '_ga': 'GA1.1.1512790354.1695026148',
+            '_hjIncludedInSessionSample_283045': '1',
+            '_hjSession_283045': 'eyJpZCI6IjBjNWZhNmMwLTA4NTktNDk4Zi04NjUxLTc1YzlhODNmOGExMSIsImNyZWF0ZWQiOjE2OTY5MjcyODI3NjAsImluU2FtcGxlIjp0cnVlLCJzZXNzaW9uaXplckJldGFFbmFibGVkIjpmYWxzZX0=',
+            '_hjAbsoluteSessionInProgress': '0',
+            'SSESS46e5ac66c3cb256f0a441094408a6223': 'XgpEdzgSCb7pB0uCtHhYcmNKNFqyevIFdUdqUYs1MF%2C7VtPx',
+            'HASH_SSESS46e5ac66c3cb256f0a441094408a6223': 'D6B378D97C3EF4A11807D1C6020FA381389006F1',
+            '_ga_GD17PFQCL8': 'GS1.1.1696927280.10.1.1696927315.0.0.0',
+            '_ga': 'GA1.1.1014721132.1695710518',
         }
 
         self.headers = {
@@ -34,7 +33,7 @@ class CPSBC():
             'Accept-Language': 'en-US,en;q=0.9',
             'Connection': 'keep-alive',
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-            # 'Cookie': 'SSESS46e5ac66c3cb256f0a441094408a6223=ho-MABFourK%2CxdcnTb6144C99uIUIIRqW9BdcL28Pp5v0Xhl; HASH_SSESS46e5ac66c3cb256f0a441094408a6223=DC715C40811E55C2BC5D1E495F30B4802E01A979; _pk_id.1.3ae9=c9f4283299c3a76d.1695026148.; _pk_ses.1.3ae9=1; _gid=GA1.2.2040544286.1695026148; _hjFirstSeen=1; _hjSession_283045=eyJpZCI6IjI5ZjcwMDIzLTQ3YWItNDU4ZS05YjVmLTgxMGYzN2UxMTQyOCIsImNyZWF0ZWQiOjE2OTUwMjYxNDgxOTksImluU2FtcGxlIjp0cnVlfQ==; _hjAbsoluteSessionInProgress=0; _hjSessionUser_283045=eyJpZCI6ImRlMzI4MTg4LTFjNTctNTNhNC1hMTAzLWZlNTNiNmQxZmNlNiIsImNyZWF0ZWQiOjE2OTUwMjYxNDgxOTcsImV4aXN0aW5nIjp0cnVlfQ==; _hjIncludedInSessionSample_283045=1; _gat_UA-30790406-1=1; _ga_GD17PFQCL8=GS1.1.1695025200.1.1.1695028285.0.0.0; _ga=GA1.1.1512790354.1695026148',
+            # 'Cookie': '_pk_id.1.3ae9=a9494f833e61216b.1695710517.; _hjSessionUser_283045=eyJpZCI6ImM0NjQ0N2JmLTQwZTMtNTFmOC1iODY5LTQxMjhjYWM0MzJkMSIsImNyZWF0ZWQiOjE2OTU3MTA1MTgzNTYsImV4aXN0aW5nIjp0cnVlfQ==; _pk_ses.1.3ae9=1; _gid=GA1.2.25044513.1696927281; _gat_UA-30790406-1=1; _hjIncludedInSessionSample_283045=1; _hjSession_283045=eyJpZCI6IjBjNWZhNmMwLTA4NTktNDk4Zi04NjUxLTc1YzlhODNmOGExMSIsImNyZWF0ZWQiOjE2OTY5MjcyODI3NjAsImluU2FtcGxlIjp0cnVlLCJzZXNzaW9uaXplckJldGFFbmFibGVkIjpmYWxzZX0=; _hjAbsoluteSessionInProgress=0; SSESS46e5ac66c3cb256f0a441094408a6223=XgpEdzgSCb7pB0uCtHhYcmNKNFqyevIFdUdqUYs1MF%2C7VtPx; HASH_SSESS46e5ac66c3cb256f0a441094408a6223=D6B378D97C3EF4A11807D1C6020FA381389006F1; _ga_GD17PFQCL8=GS1.1.1696927280.10.1.1696927315.0.0.0; _ga=GA1.1.1014721132.1695710518',
             'Origin': 'https://www.cpsbc.ca',
             'Referer': 'https://www.cpsbc.ca/public/registrant-directory/search-result',
             'Sec-Fetch-Dest': 'empty',
@@ -49,14 +48,11 @@ class CPSBC():
 
         self.params = {
             'ajax_form': '1',
-            '_wrapper_format': [
-                'drupal_ajax',
-                'drupal_ajax',
-            ],
+            '_wrapper_format': 'drupal_ajax',
         }
 
         self.data = [
-            ('form_build_id', 'form-Ds4bldEbqY9bN4CEPMap-77Sh8LMxdWqVza5tDyKjx0'),
+            ('form_build_id', 'form-kMtQTyJ9SW23tRhvSWT_zyrkkahYto6BmUYjf7OSfxo'),
             ('form_id', 'cpsbc_directory_form'),
             ('ps_last_name', ''),
             ('ps_first_name', ''),
@@ -68,20 +64,16 @@ class CPSBC():
             ('Languages', '0'),
             ('msp_number', ''),
             ('pagination_info', '1'),
-            ('form_build_id', 'form-Ds4bldEbqY9bN4CEPMap-77Sh8LMxdWqVza5tDyKjx0'),
+            ('form_build_id', 'form-kMtQTyJ9SW23tRhvSWT_zyrkkahYto6BmUYjf7OSfxo'),
             ('form_id', 'cpsbc_directory_form'),
-            ('results_per_page', '20'),
-            ('results_per_page_mobile', '20'),
-            ('footer_results_per_page', '20'),
-            ('footer_results_per_page_mobile', '20'),
             ('_triggering_element_name', 'op'),
             ('_triggering_element_value', 'Search'),
             ('_drupal_ajax', '1'),
             ('ajax_page_state[theme]', 'college'),
             ('ajax_page_state[theme_token]', ''),
-            ('ajax_page_state[libraries]', 'addtoany/addtoany.front,big_pipe/big_pipe,chosen/drupal.chosen,classy/base,classy/messages,college/bootstrap,college/global-theming,core/drupal.autocomplete,core/internal.jquery.form,core/normalize,cpsbc_directory/cpsbc_directory,matomo/matomo,search_api_autocomplete/search_api_autocomplete,system/base,views/views.module'),
+            ('ajax_page_state[libraries]', 'addtoany/addtoany.front,classy/base,classy/messages,college/bootstrap,college/global-theming,core/drupal.ajax,core/drupal.autocomplete,core/internal.jquery.form,core/normalize,cpsbc_directory/cpsbc_directory,matomo/matomo,search_api_autocomplete/search_api_autocomplete,system/base,views/views.module'),
         ]
-        with open('done.json','r') as json_file:
+        with open('done.json', 'r') as json_file:
             self.done = json.load(json_file)
 
     def make_request(self, url, data):
@@ -101,7 +93,7 @@ class CPSBC():
             print(link)
             schama = {
                 "Link": "",
-                "MSP number":"",
+                "MSP number": "",
                 "Title": "",
                 "Gender": "",
                 "Languages": "",
@@ -117,8 +109,9 @@ class CPSBC():
             response = requests.get(link)
             soup = BeautifulSoup(response.content, 'lxml')
             schama['Link'] = link
-            
-            schama['MSP number'] = self.helper.get_text_from_tag(soup.find('h5',{'class':'mspNumber align-self-end'}))
+
+            schama['MSP number'] = self.helper.get_text_from_tag(
+                soup.find('h5', {'class': 'mspNumber align-self-end'}))
 
             schama['Title'] = self.helper.get_text_from_tag(
                 soup.find('h1', {'class': 'directory-profile--name'}))
@@ -150,7 +143,8 @@ class CPSBC():
                 schama['Registration Class'] = registration_class.find_next(
                     'span').text
 
-            practice_type = registration_div.find('strong', text='Practice type: ')
+            practice_type = registration_div.find(
+                'strong', text='Practice type: ')
             if practice_type:
                 schama['Practice Type'] = practice_type.find_next(
                     'span').text.strip()
@@ -213,10 +207,10 @@ class CPSBC():
             self.all_data.append(schama)
             self.done.append(link)
             with open("done.json", "w") as json_file:
-                json.dump(self.done, json_file,indent=4)
+                json.dump(self.done, json_file, indent=4)
             print(len(self.all_data))
             with open("data.json", "w") as json_file:
-                json.dump(self.all_data, json_file,indent=4)
+                json.dump(self.all_data, json_file, indent=4)
         # return self.all_data
 
     def run_multiThread(self, function, max_workers, args):
@@ -237,5 +231,4 @@ class CPSBC():
 if __name__ == "__main__":
     obj = CPSBC()
     obj.scarp()
-    # obj.get_data()
-    # ['https://www.cpsbc.ca/public/registrant-directory/search-result/357625/Abdalvand%2CAli'])
+    # obj.get_data('https://www.cpsbc.ca/public/registrant-directory/search-result/357625/Abdalvand%2CAli')
